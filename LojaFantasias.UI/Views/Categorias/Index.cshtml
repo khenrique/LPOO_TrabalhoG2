@@ -1,0 +1,25 @@
+﻿@model IEnumerable<LojaFantasias.Data.Categorias>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Lista de Categorias</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nome_cat)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nome_cat)
+        </td>
+    </tr>
+}
+
+</table>
