@@ -1,0 +1,8 @@
+C:\Users\Marielle\Desktop\LPOO_TrabalhoG2\LojaFantasias.Data\bin\Debug\LojaFantasias.Data.dll
+C:\Users\Marielle\Desktop\LPOO_TrabalhoG2\LojaFantasias.Data\bin\Debug\LojaFantasias.Data.pdb
+C:\Users\Marielle\Desktop\LPOO_TrabalhoG2\LojaFantasias.Data\obj\Debug\LojaFantasias.Data.dll
+C:\Users\Marielle\Desktop\LPOO_TrabalhoG2\LojaFantasias.Data\obj\Debug\LojaFantasias.Data.pdb
+C:\Users\Marielle\Desktop\Trabalho#Funcionando\LPOO_TrabalhoG2\LojaFantasias.Data\bin\Debug\LojaFantasias.Data.dll
+C:\Users\Marielle\Desktop\Trabalho#Funcionando\LPOO_TrabalhoG2\LojaFantasias.Data\bin\Debug\LojaFantasias.Data.pdb
+C:\Users\Marielle\Desktop\Trabalho#Funcionando\LPOO_TrabalhoG2\LojaFantasias.Data\obj\Debug\LojaFantasias.Data.dll
+C:\Users\Marielle\Desktop\Trabalho#Funcionando\LPOO_TrabalhoG2\LojaFantasias.Data\obj\Debug\LojaFantasias.Data.pdb

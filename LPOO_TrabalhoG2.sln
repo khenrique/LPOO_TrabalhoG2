@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conexao", "Conexao\Conexao.csproj", "{DE8FA804-415E-4922-8287-99F2AEB76A39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaFantasias.Data", "LojaFantasias.Data\LojaFantasias.Data.csproj", "{290DBA09-192C-4C25-AFB0-BE3575B999A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaFantasias.Repository", "LojaFantasias.Repository\LojaFantasias.Repository.csproj", "{B1258820-0C83-441C-877B-98C09FD13379}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LojaFantasias.UI", "LojaFantasias.UI\LojaFantasias.UI.csproj", "{97AF33A0-F8B9-4B14-95F0-88669DC46484}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LojaFantasias.Doc", "LojaFantasias.Doc", "{5ACCC221-002F-4087-AACD-BBF3B15D4ECA}"
+	ProjectSection(SolutionItems) = preProject
+		LojaFantasias.Doc\CREATES - fantasias.sql = LojaFantasias.Doc\CREATES - fantasias.sql
+		LojaFantasias.Doc\INSERTS - fantasias.sql = LojaFantasias.Doc\INSERTS - fantasias.sql
+		LojaFantasias.Doc\Trabalho.mwb = LojaFantasias.Doc\Trabalho.mwb
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE8FA804-415E-4922-8287-99F2AEB76A39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE8FA804-415E-4922-8287-99F2AEB76A39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE8FA804-415E-4922-8287-99F2AEB76A39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE8FA804-415E-4922-8287-99F2AEB76A39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{290DBA09-192C-4C25-AFB0-BE3575B999A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{290DBA09-192C-4C25-AFB0-BE3575B999A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{290DBA09-192C-4C25-AFB0-BE3575B999A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{290DBA09-192C-4C25-AFB0-BE3575B999A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1258820-0C83-441C-877B-98C09FD13379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1258820-0C83-441C-877B-98C09FD13379}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1258820-0C83-441C-877B-98C09FD13379}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1258820-0C83-441C-877B-98C09FD13379}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97AF33A0-F8B9-4B14-95F0-88669DC46484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97AF33A0-F8B9-4B14-95F0-88669DC46484}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97AF33A0-F8B9-4B14-95F0-88669DC46484}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97AF33A0-F8B9-4B14-95F0-88669DC46484}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

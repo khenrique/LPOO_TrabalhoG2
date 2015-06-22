@@ -1,0 +1,79 @@
+﻿@model IEnumerable<LojaFantasias.Data.Fantasias>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Lista de Fantasias</h2>
+
+<p>
+    @Html.ActionLink("Inserir Nova Fantasia", "Create")
+</p>
+<br />
+
+@{
+    if (IsPost)
+    {
+        var txtbuscar = Request["txtbuscar"];
+    }
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <table>
+        <tr>
+            <td>
+                <input id="txtbuscar" required="required" size="200" type="text"
+                       name="txtbuscar" value="" class="form-control" />
+            </td>
+            <td><input type="submit" value="Buscar por Nome" class="btn btn-default" /></td>
+        </tr>
+    </table><br>
+}
+
+@using (Html.BeginForm("Index","Fantasias")) { 
+    @Html.AntiForgeryToken()
+    <table>
+        <tr>
+            <td>@Html.DropDownList("Categorias", ViewBag.Categorias as SelectList, string.Empty, new { @class = "form-control" })</td>
+            <td><input class="btn btn-default" type="submit" value="Buscar por Tipo" /></td>
+        </tr>
+    </table><br>
+}
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.descricao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.qtd_exemplares)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.categoria.nome_cat)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.descricao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.qtd_exemplares)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.categoria.nome_cat)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id_fantasia }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.id_fantasia })
+        </td>
+    </tr>
+}
+
+</table>
