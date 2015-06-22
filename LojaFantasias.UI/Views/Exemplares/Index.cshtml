@@ -1,0 +1,90 @@
+﻿@model IEnumerable<LojaFantasias.Data.Exemplares>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Lista de Exemplares</h2>
+
+<p>
+    @Html.ActionLink("Inserir Novos Exemplares", "Create")
+</p>
+
+@{
+    if (IsPost)
+    {
+        var txtbuscar = Request["txtbuscar"];
+    }
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <table>
+        <tr>
+            <td>
+                <input id="txtbuscar" required="required" size="200" type="text"
+                       name="txtbuscar" value="" class="form-control" />
+            </td>
+            <td><input type="submit" value="Buscar por Exemplar" class="btn btn-default" /></td>
+        </tr>
+    </table><br>
+}
+
+@using (Html.BeginForm("Index", "Exemplares"))
+{
+    @Html.AntiForgeryToken()
+    <table>
+        <tr>
+            <td>@Html.DropDownList("Tamanhos", null, "Selecione o Tamanho", new { @class = "form-control" })</td>
+            <td><input class="btn btn-default" type="submit" value="Buscar por Tamanho" /></td>
+        </tr>
+    </table><br>
+}
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.id_exemplar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fantasia.descricao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tamanho)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.status_exemplar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fantasia.categoria.nome_cat)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_exemplar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fantasia.descricao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tamanho)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.status_exemplar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fantasia.categoria.nome_cat)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id_exemplar }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.id_exemplar })
+        </td>
+    </tr>
+}
+
+</table>
