@@ -44,6 +44,7 @@ namespace LojaFantasias.UI.Controllers
         public ActionResult Create()
         {
             ViewBag.Categorias = new SelectList(CategoriasRepo.Get(), "id_categoria", "nome_cat");
+            ViewBag.Fornecedores = new SelectList(FornecedoresRepo.Get(), "id_fornecedor", "nome_forn");
             return View();
         }
 
@@ -64,6 +65,7 @@ namespace LojaFantasias.UI.Controllers
         public ActionResult Edit()
         {
             ViewBag.Categorias = new SelectList(CategoriasRepo.Get(), "id_categoria", "nome_cat");
+            ViewBag.Fornecedores = new SelectList(FornecedoresRepo.Get(), "id_fornecedor", "nome_forn");
             return View();
         }
 

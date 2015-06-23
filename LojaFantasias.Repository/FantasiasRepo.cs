@@ -23,8 +23,10 @@ namespace LojaFantasias.Repository
             List<Fantasias> lista = new List<Fantasias>();
 
             sql.Append("SELECT * ");
-            sql.Append("FROM fantasias f INNER JOIN categorias c ");
-            sql.Append("ON f.id_categoria = c.id_categoria ");
+            sql.Append("FROM fantasias fa INNER JOIN categorias c ");
+            sql.Append("ON fa.id_categoria = c.id_categoria ");
+            sql.Append("INNER JOIN fornecedores fo ");
+            sql.Append("ON fa.id_fornecedor = fo.id_fornecedor ");
             sql.Append("ORDER BY descricao ");
 
             MySqlDataReader dr = MinhaConexao.getLista(sql.ToString());
@@ -42,6 +44,13 @@ namespace LojaFantasias.Repository
                                 {
                                     id_categoria = dr.GetInt16(dr.GetOrdinal("id_categoria")),
                                     nome_cat = dr.GetString(dr.GetOrdinal("nome_cat"))
+                                },
+                                fornecedor = new Fornecedores
+                                {
+                                    id_fornecedor = (int)dr["id_fornecedor"],
+                                    nome_forn = (string)dr["nome_forn"],
+                                    telefone = (string)dr["telefone"],
+                                    qtd_fantasias_fornecidas = (int)dr["qtd_fantasias_fornecidas"]
                                 }
                             }
                         );

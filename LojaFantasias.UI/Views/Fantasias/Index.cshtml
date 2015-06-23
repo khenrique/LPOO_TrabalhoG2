@@ -55,6 +55,9 @@
         <th>
             @Html.DisplayNameFor(model => model.categoria.nome_cat)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fornecedor.nome_forn)
+        </th>
         <th></th>
     </tr>
 
@@ -68,6 +71,9 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.categoria.nome_cat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fornecedor.nome_forn)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.id_fantasia }) |

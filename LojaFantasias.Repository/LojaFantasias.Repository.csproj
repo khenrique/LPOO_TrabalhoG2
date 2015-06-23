@@ -47,6 +47,7 @@
     <Compile Include="ClientesRepo.cs" />
     <Compile Include="ExemplaresRepo.cs" />
     <Compile Include="FantasiasRepo.cs" />
+    <Compile Include="FornecedoresRepo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -15,7 +15,7 @@ namespace LojaFantasias.Data
 
         [Display(Name = "Nome Fornecedor")]
         [Required(ErrorMessage = "O campo Nome deve ser preenchido.")]
-        public string nome_fornecedor { get; set; }
+        public string nome_forn { get; set; }
 
 
         [Display(Name = "Telefone")]
@@ -24,6 +24,6 @@ namespace LojaFantasias.Data
 
 
         [Display(Name = "Quantidade De Fantasias Fornecidas")]
-        public int qtd_fantasias { get; set; }
+        public int qtd_fantasias_fornecidas { get; set; }
     }
 }

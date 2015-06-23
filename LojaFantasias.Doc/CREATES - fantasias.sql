@@ -18,7 +18,8 @@ CREATE TABLE IF NOT EXISTS loja_fantasias.categorias (
 CREATE TABLE IF NOT EXISTS loja_fantasias.fornecedores (
     id_fornecedor INT(11) NOT NULL AUTO_INCREMENT,
     nome_forn VARCHAR(45) NULL DEFAULT NULL,
-    qtd_fantacias_fornecidas VARCHAR(45) NULL DEFAULT NULL,
+    telefone VARCHAR(45) NOT NULL,
+	qtd_fantasias_fornecidas INT NULL DEFAULT 0 ;
     PRIMARY KEY (id_fornecedor)
 );
 

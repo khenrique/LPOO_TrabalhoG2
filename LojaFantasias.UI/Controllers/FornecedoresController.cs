@@ -10,7 +10,6 @@ namespace LojaFantasias.UI.Controllers
 {
     public class FornecedoresController : Controller
     {
-        //
         // GET: /Fornecedores/
         
          public ActionResult Index(string txtbuscar)
@@ -41,6 +40,7 @@ namespace LojaFantasias.UI.Controllers
                  return View();
              }
          }
+
          [HttpPost]
          public ActionResult Edit(int id, Fornecedores Fornecedor)
          {
@@ -65,6 +65,21 @@ namespace LojaFantasias.UI.Controllers
              FornecedoresRepo.Delete(id);
              return RedirectToAction("index");
          }
-         
+
+         public ActionResult Details(int id)
+         {
+             ViewBag.Fornecedores = new SelectList(FornecedoresRepo.Get(), "id_fornecedor", "nome_forn");
+             List<Fantasias> lista = FornecedoresRepo.FantasiasDoFornecedor(id);
+             return View(lista);
+         }
+
+         [HttpPost]
+         public ActionResult Details(FormCollection form)
+         {
+             ViewBag.Fornecedores = new SelectList(FornecedoresRepo.Get(), "id_fornecedor", "nome_forn");
+             int id = int.Parse(form["Fornecedores"]);
+             List<Fantasias> lista = FornecedoresRepo.FantasiasDoFornecedor(id);
+             return View(lista);
+         }
     }
 }

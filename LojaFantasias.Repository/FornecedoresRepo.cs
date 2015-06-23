@@ -24,7 +24,8 @@ namespace LojaFantasias.Repository
             List<Fornecedores> lista = new List<Fornecedores>();
 
             sql.Append("SELECT * ");
-            sql.Append("FROM fornecedores");
+            sql.Append("FROM fornecedores ");
+            sql.Append("ORDER BY nome_forn ");
 
             MySqlDataReader dr = MinhaConexao.getLista(sql.ToString());
             {
@@ -35,9 +36,9 @@ namespace LojaFantasias.Repository
                             new Fornecedores
                             {
                                 id_fornecedor = (int)dr["id_fornecedor"],
-                                nome_fornecedor = (string)dr["nome_forn"],
+                                nome_forn = (string)dr["nome_forn"],
                                 telefone = (string)dr["telefone"],
-                                qtd_fantasias = (int)dr["qtd__fornecidas"]
+                                qtd_fantasias_fornecidas = (int)dr["qtd_fantasias_fornecidas"]
                             }
                         );
             }
@@ -48,11 +49,11 @@ namespace LojaFantasias.Repository
         public static void Create(Fornecedores pFornecedor)
         {
             sql = new StringBuilder();
-            sql.Append("INSERT INTO  (nome_forn, telefone) ");
-            sql.Append("VALUES (@nome, @telefone) ");
+            sql.Append("INSERT INTO fornecedores (nome_forn, telefone) ");
+            sql.Append("VALUES (@nome_forn, @telefone) ");
 
             MySqlCommand cmm = new MySqlCommand();
-            cmm.Parameters.AddWithValue("@nome", pFornecedor.nome_fornecedor);
+            cmm.Parameters.AddWithValue("@nome_forn", pFornecedor.nome_forn);
             cmm.Parameters.AddWithValue("@telefone", pFornecedor.telefone);
 
             cmm.CommandText = sql.ToString();
@@ -63,12 +64,12 @@ namespace LojaFantasias.Repository
         {
             sql = new StringBuilder();
 
-            sql.Append("UPDATE Fornecedores SET nome_fornecedor=@nome, telefone=@telefone ");
-            sql.Append("WHERE id_fornecedor=@id_fornecedor");
+            sql.Append("UPDATE Fornecedores SET nome_forn=@nome_forn, telefone=@telefone ");
+            sql.Append("WHERE id_fornecedor=@id_fornecedor ");
 
             MySqlCommand cmm = new MySqlCommand();
             cmm.Parameters.AddWithValue("@id_fornecedor", pIdFornecedor);
-            cmm.Parameters.AddWithValue("@nome", pFornecedor.nome_fornecedor);
+            cmm.Parameters.AddWithValue("@nome_forn", pFornecedor.nome_forn);
             cmm.Parameters.AddWithValue("@telefone", pFornecedor.telefone);
 
             cmm.CommandText = sql.ToString();
@@ -96,7 +97,7 @@ namespace LojaFantasias.Repository
 
             sql.Append("SELECT * ");
             sql.Append("FROM fantasias f INNER JOIN fornecedores fr ");
-            sql.Append("ON f.id_fornecedor = fr.id_fornecedor WHERE fr.id_fornecedor="+pIdFornecedor);
+            sql.Append("ON f.id_fornecedor = fr.id_fornecedor WHERE fr.id_fornecedor= " + pIdFornecedor + " ");
             sql.Append("ORDER BY descricao ");
 
             MySqlDataReader dr = MinhaConexao.getLista(sql.ToString());
@@ -110,11 +111,13 @@ namespace LojaFantasias.Repository
                                 id_fantasia = (int)dr["id_fantasia"],
                                 descricao = (string)dr["descricao"],
                                 qtd_exemplares = (int)dr["qtd_exemplares"],
-                                categoria = new Categorias
+                                fornecedor = new Fornecedores
                                 {
-                                    id_categoria = dr.GetInt16(dr.GetOrdinal("id_categoria")),
-                                    nome_cat = dr.GetString(dr.GetOrdinal("nome_cat"))
-                                }
+                                    id_fornecedor = (int)dr["id_fornecedor"],
+                                    nome_forn = (string)dr["nome_forn"],
+                                    telefone = (string)dr["telefone"],
+                                    qtd_fantasias_fornecidas = (int)dr["qtd_fantasias_fornecidas"]
+                                }   
                             }
                         );
             }
@@ -142,9 +145,9 @@ namespace LojaFantasias.Repository
                             new Fornecedores
                             {
                                 id_fornecedor = (int)dr["id_fornecedor"],
-                                nome_fornecedor = (string)dr["nome_forn"],
+                                nome_forn = (string)dr["nome_forn"],
                                 telefone = (string)dr["telefone"],
-                                qtd_fantasias = (int)dr["qtd_fantasias_fornecidas"]
+                                qtd_fantasias_fornecidas = (int)dr["qtd_fantasias_fornecidas"]
                             }
                         );
             }

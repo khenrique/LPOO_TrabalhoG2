@@ -1,0 +1,57 @@
+﻿@model IEnumerable<LojaFantasias.Data.Fantasias>
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Fantasias Fornecidas pelo Fornecedor</h2><br />
+
+@using (Html.BeginForm("Details", "Fornecedores"))
+{
+    <table>
+        <tr>
+            <td>@Html.DropDownList("Fornecedores", ViewBag.Fornecedores as SelectList, string.Empty, new { @class = "form-control" })</td>
+            <td><input class="btn btn-default" type="submit" value="Burcar" /></td>
+        </tr>
+    </table>
+}
+<br />
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.id_fantasia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.descricao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.qtd_exemplares)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fornecedor.nome_forn)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_fantasia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.descricao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.qtd_exemplares)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fornecedor.nome_forn)
+        </td>
+    </tr>
+}
+
+</table>
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
