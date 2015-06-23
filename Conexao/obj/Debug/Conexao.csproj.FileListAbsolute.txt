@@ -1,0 +1,12 @@
+C:\Users\Marielle\Desktop\LPOO_TrabalhoG2\Conexao\bin\Debug\Conexao.pdb
+C:\Users\Marielle\Desktop\LPOO_TrabalhoG2\Conexao\obj\Debug\Conexao.dll
+C:\Users\Marielle\Desktop\LPOO_TrabalhoG2\Conexao\obj\Debug\Conexao.pdb
+C:\Users\Marielle\Desktop\LPOO_TrabalhoG2\Conexao\obj\Debug\Conexao.csprojResolveAssemblyReference.cache
+C:\Users\Marielle\Desktop\Trabalho#Funcionando\LPOO_TrabalhoG2\Conexao\bin\Debug\Conexao.pdb
+C:\Users\Marielle\Desktop\Trabalho#Funcionando\LPOO_TrabalhoG2\Conexao\obj\Debug\Conexao.csprojResolveAssemblyReference.cache
+C:\Users\Marielle\Desktop\Trabalho#Funcionando\LPOO_TrabalhoG2\Conexao\obj\Debug\Conexao.dll
+C:\Users\Marielle\Desktop\Trabalho#Funcionando\LPOO_TrabalhoG2\Conexao\obj\Debug\Conexao.pdb
+C:\TrabalhoG2_Git\Conexao\bin\Debug\Conexao.pdb
+C:\TrabalhoG2_Git\Conexao\obj\Debug\Conexao.dll
+C:\TrabalhoG2_Git\Conexao\obj\Debug\Conexao.pdb
+C:\TrabalhoG2_Git\Conexao\obj\Debug\Conexao.csprojResolveAssemblyReference.cache
