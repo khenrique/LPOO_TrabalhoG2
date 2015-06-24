@@ -11,3 +11,4 @@ C:\TrabalhoG2_Git\LojaFantasias.Data\bin\Debug\LojaFantasias.Data.dll
 C:\TrabalhoG2_Git\LojaFantasias.Data\bin\Debug\LojaFantasias.Data.pdb
 C:\TrabalhoG2_Git\LojaFantasias.Data\obj\Debug\LojaFantasias.Data.dll
 C:\TrabalhoG2_Git\LojaFantasias.Data\obj\Debug\LojaFantasias.Data.pdb
+C:\TrabalhoG2_Git\LojaFantasias.Data\obj\Debug\LojaFantasias.Data.csprojResolveAssemblyReference.cache
