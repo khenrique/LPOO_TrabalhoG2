@@ -26,6 +26,10 @@ namespace LojaFantasias.Data
         [Display(Name = "Categoria")]
         [Required(ErrorMessage = "O campo Categoria deve ser preenchido.")]
         public Categorias categoria { get; set; }
+
+
+        [Display(Name = "Imagem da Fantasia")]
+        public string imagem { get; set; }
     }
 }
 

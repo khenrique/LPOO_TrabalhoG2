@@ -166,11 +166,11 @@
     <Content Include="Views\Clientes\Edit.cshtml" />
     <Content Include="Views\Clientes\Index.cshtml" />
     <Content Include="Views\Fantasias\Index.cshtml" />
-    <Content Include="Views\Fantasias\Create.cshtml" />
     <Content Include="Views\Fantasias\Edit.cshtml" />
     <Content Include="Views\Exemplares\Index.cshtml" />
     <Content Include="Views\Exemplares\Create.cshtml" />
     <Content Include="Views\Exemplares\Edit.cshtml" />
+    <Content Include="Views\Fantasias\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

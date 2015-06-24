@@ -14,19 +14,37 @@
     <div class="form-horizontal">
         <h4>Fantasias</h4>
         <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.ValidationSummary(true)
+
         <div class="form-group">
-            @Html.LabelFor(model => model.descricao, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.id_fantasia, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.descricao, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.descricao, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.id_fantasia)
+                @Html.ValidationMessageFor(model => model.id_fantasia)
             </div>
         </div>
 
         <div class="form-group">
-            @Html.Label("Categorias", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.descricao, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownListFor(model => model.categoria.id_categoria, ViewBag.Categorias as SelectList, string.Empty, new { @class = "form-control" })
+                @Html.EditorFor(model => model.descricao)
+                @Html.ValidationMessageFor(model => model.descricao)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.qtd_exemplares, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.qtd_exemplares)
+                @Html.ValidationMessageFor(model => model.qtd_exemplares)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.imagem, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.imagem)
+                @Html.ValidationMessageFor(model => model.imagem)
             </div>
         </div>
 

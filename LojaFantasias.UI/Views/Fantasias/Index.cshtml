@@ -55,6 +55,9 @@
         <th>
             @Html.DisplayNameFor(model => model.categoria.nome_cat)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.imagem)
+        </th>
         <th></th>
     </tr>
 
@@ -70,9 +73,12 @@
             @Html.DisplayFor(modelItem => item.categoria.nome_cat)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.id_fantasia }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.id_fantasia })
+           <img src="@Html.DisplayFor(modelItem => item.imagem)">
         </td>
+        <td><h4>
+    @Html.ActionLink("Edit", "Edit", new { id = item.id_fantasia }) |
+    @Html.ActionLink("Delete", "Delete", new { id = item.id_fantasia })
+</h4></td>
     </tr>
 }
 

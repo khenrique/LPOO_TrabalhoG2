@@ -25,10 +25,10 @@ namespace Conexao
             get
             {
                 return "Server=" + _nomeServidor +
-                        ";Port=3307" +
+                        ";Port=3306" +
                         ";Database=" + _nomeBanco +
                         ";Uid=root" +
-                        ";Pwd=2067" +
+                        ";Pwd=" +
                         ";default command timeout=512";
             }
         }
