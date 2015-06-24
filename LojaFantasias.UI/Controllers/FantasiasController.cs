@@ -74,5 +74,21 @@ namespace LojaFantasias.UI.Controllers
             FantasiasRepo.Delete(id);
             return RedirectToAction("index");
         }
+
+        public ActionResult Details(int id)
+        {
+            ViewBag.Fantasias = new SelectList(FantasiasRepo.Get(), "id_fantasia", "descricao");
+            List<Exemplares> lista = FantasiasRepo.ExemplaresDaFantasia(id);
+            return View(lista);
+        }
+
+        [HttpPost]
+        public ActionResult Details(FormCollection form)
+        {
+            ViewBag.Fantasias = new SelectList(FantasiasRepo.Get(), "id_fantasia", "descricao");
+            int id = int.Parse(form["Fantasias"]);
+            List<Exemplares> lista = FantasiasRepo.ExemplaresDaFantasia(id);
+            return View(lista);
+        }
     }
 }

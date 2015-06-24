@@ -1,0 +1,63 @@
+﻿@model IEnumerable<LojaFantasias.Data.Exemplares>
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Exemplares Cadastrados da Fantasia</h2>
+
+@using (Html.BeginForm("Details", "Fantasias"))
+{
+    <table>
+        <tr>
+            <td>@Html.DropDownList("Fantasias", ViewBag.Fantasias as SelectList, string.Empty, new { @class = "form-control" })</td>
+            <td><input class="btn btn-default" type="submit" value="Burcar" /></td>
+        </tr>
+    </table>
+}
+<br />
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.id_exemplar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tamanho)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.status_exemplar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fantasia.descricao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fantasia.categoria.nome_cat)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_exemplar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tamanho)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.status_exemplar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fantasia.descricao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fantasia.categoria.nome_cat)
+        </td>
+    </tr>
+}
+
+</table>
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

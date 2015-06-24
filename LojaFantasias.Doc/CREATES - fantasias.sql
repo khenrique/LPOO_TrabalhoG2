@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS loja_fantasias.fornecedores (
     id_fornecedor INT(11) NOT NULL AUTO_INCREMENT,
     nome_forn VARCHAR(45) NULL DEFAULT NULL,
     telefone VARCHAR(45) NOT NULL,
-	qtd_fantasias_fornecidas INT NULL DEFAULT 0 ;
+	qtd_fantasias_fornecidas INT NULL DEFAULT 0,
     PRIMARY KEY (id_fornecedor)
 );
 
@@ -28,6 +28,7 @@ CREATE TABLE IF NOT EXISTS loja_fantasias.fantasias (
     id_categoria INT(11) NOT NULL,
     descricao VARCHAR(45) NOT NULL,
 	id_fornecedor INT(11) NOT NULL,
+	qtd_exemplares INT NULL DEFAULT 0,
     PRIMARY KEY (id_fantasia),
     FOREIGN KEY (id_categoria)
         REFERENCES loja_fantasias.categorias (id_categoria)
@@ -41,6 +42,7 @@ CREATE TABLE IF NOT EXISTS loja_fantasias.exemplares (
     id_exemplar INT(11) NOT NULL AUTO_INCREMENT,
     id_fantasia INT(11) NOT NULL,
     tamanho CHAR(2) NULL DEFAULT 'UN',
+	status_exemplar CHAR(3) NULL DEFAULT 'DIS',
     PRIMARY KEY (id_exemplar),
     FOREIGN KEY (id_fantasia)
         REFERENCES loja_fantasias.fantasias (id_fantasia)
@@ -61,20 +63,3 @@ CREATE TABLE IF NOT EXISTS loja_fantasias.alugueis (
         REFERENCES loja_fantasias.exemplares (id_exemplar)
         ON DELETE NO ACTION ON UPDATE NO ACTION
 );
-
-
-------------------------------------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------------
------------------------------------------------ALTERAÇOES NO BANCO DEPOIS DO DIA 16/06/2015-----------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------------
-
-
-ALTER TABLE loja_fantasias.fantasias 
-ADD COLUMN qtd_exemplares INT NULL DEFAULT 0 AFTER descricao;
-
-ALTER TABLE loja_fantasias.exemplares
-ADD COLUMN status_exemplar CHAR(3) NULL DEFAULT 'DIS' AFTER tamanho;
-
-ALTER TABLE loja_fantasias.fornecedores
-ADD coLUMN telefone VARCHAR(45) NOT NULL AFTER qtd_fantacias_fornecidas;

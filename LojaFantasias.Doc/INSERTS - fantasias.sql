@@ -73,6 +73,10 @@ INSERT INTO exemplares(id_fantasia, tamanho) VALUES (8, 'P');
 INSERT INTO exemplares(id_fantasia, tamanho) VALUES (8, 'M'); 
 INSERT INTO exemplares(id_fantasia, tamanho) VALUES (8, 'GG');
 
+----------------------------------------------------------------------------------
+-------------------------------INSERT TABELA ALUGUEIS-----------------------------
+----------------------------------------------------------------------------------
+
 INSERT INTO alugueis (id_cliente, id_exemplar,data_retirada)
 VALUES (1, 1, '2015-05-31');
 INSERT INTO alugueis (id_cliente, id_exemplar,data_retirada)
