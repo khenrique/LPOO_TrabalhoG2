@@ -40,6 +40,7 @@ namespace LojaFantasias.Repository
                                 id_fantasia = (int)dr["id_fantasia"],
                                 descricao = (string)dr["descricao"],
                                 qtd_exemplares = (int)dr["qtd_exemplares"],
+                                imagem = (string)dr["imagem"],
                                 categoria = new Categorias
                                 {
                                     id_categoria = dr.GetInt16(dr.GetOrdinal("id_categoria")),
@@ -67,8 +68,13 @@ namespace LojaFantasias.Repository
 
             MySqlCommand cmm = new MySqlCommand();
             cmm.Parameters.AddWithValue("@descricao", pFantasia.descricao);
+            cmm.Parameters.AddWithValue("@imagem", pFantasia.imagem);
             cmm.Parameters.AddWithValue("@id_categoria", pFantasia.categoria.id_categoria);
+<<<<<<< HEAD
             cmm.Parameters.AddWithValue("@id_fornecedor", pFantasia.fornecedor.id_fornecedor);
+=======
+            
+>>>>>>> 19c20d04a8dfa5e89256f856cc75b9c049fbeb03
 
             cmm.CommandText = sql.ToString();
             MinhaConexao.CommandPersist(cmm);
@@ -78,14 +84,22 @@ namespace LojaFantasias.Repository
         {
             sql = new StringBuilder();
 
+<<<<<<< HEAD
             sql.Append("UPDATE fantasias SET descricao=@descricao, id_categoria=@id_categoria, id_fornecedor=@id_fornecedor ");
+=======
+            sql.Append("UPDATE fantasias SET descricao=@descricao, id_categoria=@id_categoria, imagem=@imagem ");
+>>>>>>> 19c20d04a8dfa5e89256f856cc75b9c049fbeb03
             sql.Append("WHERE id_fantasia=@id_fantasia ");
 
             MySqlCommand cmm = new MySqlCommand();
             cmm.Parameters.AddWithValue("@id_fantasia", pIdFantasia);
             cmm.Parameters.AddWithValue("@descricao", pFantasia.descricao);
             cmm.Parameters.AddWithValue("@id_categoria", pFantasia.categoria.id_categoria);
+<<<<<<< HEAD
             cmm.Parameters.AddWithValue("@id_fornecedor", pFantasia.fornecedor.id_fornecedor);
+=======
+            cmm.Parameters.AddWithValue("@imagem", pFantasia.imagem);
+>>>>>>> 19c20d04a8dfa5e89256f856cc75b9c049fbeb03
 
             cmm.CommandText = sql.ToString();
             MinhaConexao.CommandPersist(cmm);
@@ -129,6 +143,7 @@ namespace LojaFantasias.Repository
                                 id_fantasia = (int)dr["id_fantasia"],
                                 descricao = (string)dr["descricao"],
                                 qtd_exemplares = (int)dr["qtd_exemplares"],
+                                imagem = (string)dr["imagem"],
                                 categoria = new Categorias
                                 {
                                     id_categoria = dr.GetInt16(dr.GetOrdinal("id_categoria")),
@@ -172,6 +187,7 @@ namespace LojaFantasias.Repository
                                 id_fantasia = (int)dr["id_fantasia"],
                                 descricao = (string)dr["descricao"],
                                 qtd_exemplares = (int)dr["qtd_exemplares"],
+                                imagem = (string)dr["imagem"],
                                 categoria = new Categorias
                                 {
                                     id_categoria = dr.GetInt16(dr.GetOrdinal("id_categoria")),

@@ -165,16 +165,19 @@
     <Content Include="Views\Clientes\Edit.cshtml" />
     <Content Include="Views\Clientes\Index.cshtml" />
     <Content Include="Views\Fantasias\Index.cshtml" />
-    <Content Include="Views\Fantasias\Create.cshtml" />
     <Content Include="Views\Fantasias\Edit.cshtml" />
     <Content Include="Views\Exemplares\Index.cshtml" />
     <Content Include="Views\Exemplares\Create.cshtml" />
     <Content Include="Views\Exemplares\Edit.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Fornecedores\Index.cshtml" />
     <Content Include="Views\Fornecedores\Create.cshtml" />
     <Content Include="Views\Fornecedores\Edit.cshtml" />
     <Content Include="Views\Fornecedores\Details.cshtml" />
     <Content Include="Views\Fantasias\Details.cshtml" />
+=======
+    <Content Include="Views\Fantasias\Create.cshtml" />
+>>>>>>> 19c20d04a8dfa5e89256f856cc75b9c049fbeb03
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -64,6 +64,7 @@ C:\Users\Marielle\Desktop\Trabalho#Funcionando\LPOO_TrabalhoG2\LojaFantasias.UI\
 C:\Users\Marielle\Desktop\Trabalho#Funcionando\LPOO_TrabalhoG2\LojaFantasias.UI\obj\Debug\LojaFantasias.UI.csprojResolveAssemblyReference.cache
 C:\Users\Marielle\Desktop\Trabalho#Funcionando\LPOO_TrabalhoG2\LojaFantasias.UI\obj\Debug\LojaFantasias.UI.dll
 C:\Users\Marielle\Desktop\Trabalho#Funcionando\LPOO_TrabalhoG2\LojaFantasias.UI\obj\Debug\LojaFantasias.UI.pdb
+<<<<<<< HEAD
 C:\TrabalhoG2_Git\LojaFantasias.UI\bin\LojaFantasias.UI.dll.config
 C:\TrabalhoG2_Git\LojaFantasias.UI\bin\LojaFantasias.UI.dll
 C:\TrabalhoG2_Git\LojaFantasias.UI\bin\LojaFantasias.UI.pdb
@@ -97,3 +98,38 @@ C:\TrabalhoG2_Git\LojaFantasias.UI\bin\Newtonsoft.Json.xml
 C:\TrabalhoG2_Git\LojaFantasias.UI\obj\Debug\LojaFantasias.UI.csprojResolveAssemblyReference.cache
 C:\TrabalhoG2_Git\LojaFantasias.UI\obj\Debug\LojaFantasias.UI.dll
 C:\TrabalhoG2_Git\LojaFantasias.UI\obj\Debug\LojaFantasias.UI.pdb
+=======
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\bin\LojaFantasias.UI.dll.config
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\bin\LojaFantasias.UI.dll
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\bin\LojaFantasias.UI.pdb
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\bin\Antlr3.Runtime.dll
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\bin\Conexao.dll
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\bin\LojaFantasias.Data.dll
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\bin\LojaFantasias.Repository.dll
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\bin\mysql.data.dll
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\bin\Newtonsoft.Json.dll
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\bin\System.Web.Helpers.dll
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\bin\System.Web.Mvc.dll
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\bin\System.Web.Optimization.dll
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\bin\System.Web.Razor.dll
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\bin\System.Web.WebPages.dll
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\bin\System.Web.WebPages.Razor.dll
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\bin\WebGrease.dll
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\bin\Conexao.pdb
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\bin\LojaFantasias.Data.pdb
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\bin\LojaFantasias.Repository.pdb
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\bin\System.Web.Helpers.xml
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\bin\System.Web.Mvc.xml
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\bin\System.Web.Optimization.xml
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\bin\System.Web.Razor.xml
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\bin\System.Web.WebPages.xml
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\bin\System.Web.WebPages.Razor.xml
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\bin\Antlr3.Runtime.pdb
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\bin\Newtonsoft.Json.xml
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\obj\Debug\LojaFantasias.UI.csprojResolveAssemblyReference.cache
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\obj\Debug\LojaFantasias.UI.dll
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.UI\obj\Debug\LojaFantasias.UI.pdb
+>>>>>>> 19c20d04a8dfa5e89256f856cc75b9c049fbeb03

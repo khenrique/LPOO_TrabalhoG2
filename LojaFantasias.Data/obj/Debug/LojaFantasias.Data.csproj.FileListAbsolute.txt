@@ -7,8 +7,16 @@ C:\Users\Marielle\Desktop\Trabalho#Funcionando\LPOO_TrabalhoG2\LojaFantasias.Dat
 C:\Users\Marielle\Desktop\Trabalho#Funcionando\LPOO_TrabalhoG2\LojaFantasias.Data\obj\Debug\LojaFantasias.Data.dll
 C:\Users\Marielle\Desktop\Trabalho#Funcionando\LPOO_TrabalhoG2\LojaFantasias.Data\obj\Debug\LojaFantasias.Data.pdb
 C:\Users\Marielle\Desktop\Trabalho#Funcionando\LPOO_TrabalhoG2\LojaFantasias.Data\obj\Debug\LojaFantasias.Data.csprojResolveAssemblyReference.cache
+<<<<<<< HEAD
 C:\TrabalhoG2_Git\LojaFantasias.Data\bin\Debug\LojaFantasias.Data.dll
 C:\TrabalhoG2_Git\LojaFantasias.Data\bin\Debug\LojaFantasias.Data.pdb
 C:\TrabalhoG2_Git\LojaFantasias.Data\obj\Debug\LojaFantasias.Data.dll
 C:\TrabalhoG2_Git\LojaFantasias.Data\obj\Debug\LojaFantasias.Data.pdb
 C:\TrabalhoG2_Git\LojaFantasias.Data\obj\Debug\LojaFantasias.Data.csprojResolveAssemblyReference.cache
+=======
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.Data\bin\Debug\LojaFantasias.Data.dll
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.Data\bin\Debug\LojaFantasias.Data.pdb
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.Data\obj\Debug\LojaFantasias.Data.csprojResolveAssemblyReference.cache
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.Data\obj\Debug\LojaFantasias.Data.dll
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.Data\obj\Debug\LojaFantasias.Data.pdb
+>>>>>>> 19c20d04a8dfa5e89256f856cc75b9c049fbeb03

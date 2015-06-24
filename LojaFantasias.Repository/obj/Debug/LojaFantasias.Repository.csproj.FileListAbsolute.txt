@@ -18,6 +18,7 @@ C:\Users\Marielle\Desktop\Trabalho#Funcionando\LPOO_TrabalhoG2\LojaFantasias.Rep
 C:\Users\Marielle\Desktop\Trabalho#Funcionando\LPOO_TrabalhoG2\LojaFantasias.Repository\obj\Debug\LojaFantasias.Repository.csprojResolveAssemblyReference.cache
 C:\Users\Marielle\Desktop\Trabalho#Funcionando\LPOO_TrabalhoG2\LojaFantasias.Repository\obj\Debug\LojaFantasias.Repository.dll
 C:\Users\Marielle\Desktop\Trabalho#Funcionando\LPOO_TrabalhoG2\LojaFantasias.Repository\obj\Debug\LojaFantasias.Repository.pdb
+<<<<<<< HEAD
 C:\TrabalhoG2_Git\LojaFantasias.Repository\bin\Debug\LojaFantasias.Repository.dll
 C:\TrabalhoG2_Git\LojaFantasias.Repository\bin\Debug\LojaFantasias.Repository.pdb
 C:\TrabalhoG2_Git\LojaFantasias.Repository\bin\Debug\Conexao.dll
@@ -28,3 +29,15 @@ C:\TrabalhoG2_Git\LojaFantasias.Repository\bin\Debug\LojaFantasias.Data.pdb
 C:\TrabalhoG2_Git\LojaFantasias.Repository\obj\Debug\LojaFantasias.Repository.csprojResolveAssemblyReference.cache
 C:\TrabalhoG2_Git\LojaFantasias.Repository\obj\Debug\LojaFantasias.Repository.dll
 C:\TrabalhoG2_Git\LojaFantasias.Repository\obj\Debug\LojaFantasias.Repository.pdb
+=======
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.Repository\bin\Debug\LojaFantasias.Repository.dll
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.Repository\bin\Debug\LojaFantasias.Repository.pdb
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.Repository\bin\Debug\Conexao.dll
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.Repository\bin\Debug\LojaFantasias.Data.dll
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.Repository\bin\Debug\mysql.data.dll
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.Repository\bin\Debug\Conexao.pdb
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.Repository\bin\Debug\LojaFantasias.Data.pdb
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.Repository\obj\Debug\LojaFantasias.Repository.csprojResolveAssemblyReference.cache
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.Repository\obj\Debug\LojaFantasias.Repository.dll
+C:\Users\Kayo\Documents\Ulbra\2015-1\LPOII\LPOO_TrabalhoG2\LojaFantasias.Repository\obj\Debug\LojaFantasias.Repository.pdb
+>>>>>>> 19c20d04a8dfa5e89256f856cc75b9c049fbeb03

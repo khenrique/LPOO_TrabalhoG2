@@ -56,7 +56,11 @@
             @Html.DisplayNameFor(model => model.categoria.nome_cat)
         </th>
         <th>
+<<<<<<< HEAD
             @Html.DisplayNameFor(model => model.fornecedor.nome_forn)
+=======
+            @Html.DisplayNameFor(model => model.imagem)
+>>>>>>> 19c20d04a8dfa5e89256f856cc75b9c049fbeb03
         </th>
         <th></th>
     </tr>
@@ -73,13 +77,21 @@
             @Html.DisplayFor(modelItem => item.categoria.nome_cat)
         </td>
         <td>
+<<<<<<< HEAD
             @Html.DisplayFor(modelItem => item.fornecedor.nome_forn)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.id_fantasia }) |
             @Html.ActionLink("Details", "Details", new { id = item.id_fantasia }) |
             @Html.ActionLink("Delete", "Delete", new { id = item.id_fantasia })
+=======
+           <img src="@Html.DisplayFor(modelItem => item.imagem)">
+>>>>>>> 19c20d04a8dfa5e89256f856cc75b9c049fbeb03
         </td>
+        <td><h4>
+    @Html.ActionLink("Edit", "Edit", new { id = item.id_fantasia }) |
+    @Html.ActionLink("Delete", "Delete", new { id = item.id_fantasia })
+</h4></td>
     </tr>
 }
 

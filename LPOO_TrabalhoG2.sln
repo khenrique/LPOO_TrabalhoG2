@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conexao", "Conexao\Conexao.csproj", "{DE8FA804-415E-4922-8287-99F2AEB76A39}"
 EndProject
@@ -16,6 +16,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LojaFantasias.Doc", "LojaFa
 		LojaFantasias.Doc\CREATES - fantasias.sql = LojaFantasias.Doc\CREATES - fantasias.sql
 		LojaFantasias.Doc\INSERTS - fantasias.sql = LojaFantasias.Doc\INSERTS - fantasias.sql
 		LojaFantasias.Doc\Trabalho.mwb = LojaFantasias.Doc\Trabalho.mwb
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LojaFantasias.Image", "LojaFantasias.Image", "{C96764C6-B129-403A-946A-196DD8CAF6B8}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\Pictures\Loja fantasias\vampiro.jpg = ..\..\..\..\..\Pictures\Loja fantasias\vampiro.jpg
 	EndProjectSection
 EndProject
 Global
